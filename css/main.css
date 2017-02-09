@@ -19,6 +19,11 @@ a {
     text-decoration: none;
     color: #999;
 }
+
+a {
+    text-decoration: none;
+    color: #999;
+}
 a:hover {
     text-decoration: underline;
 }
@@ -74,7 +79,19 @@ ul.posts li {
 
 
 
+html, body {height: 100%;}
 
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+	padding-bottom: 180px;}  /* must be same height as the footer */
+
+.footer {position: relative;
+	margin-top: -180px; /* negative value of footer height */
+	height: 180px;
+	clear:both;
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;} 
 
 
 
@@ -155,4 +172,37 @@ label.required:after {
 }
 .row {
   margin:5px;
+}
+
+
+
+
+.b {
+display:inline-block;
+position: relative;
+margin: 1%;
+float:left;
+width:48%;
+height:350px;
+background-color: lightgrey;
+}
+
+.c {
+display:inline-block;
+position: relative;
+margin: 1%;
+float:right;
+width: 48%;
+height:350px;
+background-color: lightgrey;
+}
+
+.d {
+display:inline-block;
+position: relative;
+margin: 1%;
+float:right;
+width: 20%;
+height:800px;
+background-color: lightgrey;
 }
