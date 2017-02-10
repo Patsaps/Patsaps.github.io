@@ -19,16 +19,16 @@ $(function() {
       },
       phone: {
         required: false,
-        minlength: 6
+        minlength: 7
       }
     },
     // Specify validation error messages
     messages: {
-      details: "Please specify what you want Mr Plumb and the crew to do for you",
+      details: "Please specify the job",
       firstname: "Please enter your firstname",
       lastname: "Please enter your lastname",
       phone: {
-        minlength: "Your phone number must be at least 5 numbers long"
+        minlength: "Your phone number must be at least 7 numbers long"
       },
       email: "Please enter a valid email address"
     },
