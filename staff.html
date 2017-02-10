@@ -1,38 +1,109 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="icon" href="images/favicon.png">
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<title>Staff</title>
-	</head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link href="images/favicon.png" rel="icon"><!-- link to main stylesheet -->
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<title>Comfordably Laid Drainage</title><!-- Scrolling Image Script -->
 
-	<body>
-		<div id="background">
-    <img src="images/background.png" class="stretch" alt="" />
-</div>
+	<script type="text/javascript">
+	         function displayNextImage() {
+	             x = (x === images.length - 1) ? 0 : x + 1;
+	             document.getElementById("img").src = images[x];
+	         }
+
+	         function displayPreviousImage() {
+	             x = (x <= 0) ? images.length - 1 : x - 1;
+	             document.getElementById("img").src = images[x];
+	         }
+
+	         function startTimer() {
+	             setInterval(displayNextImage, 3000);
+	         }
+
+	         var images = [], x = -1;
+	         images[0] = "images/24hour.png";
+	         images[1] = "images/certified.png";
+	         images[2] = "images/nosmall.png";
+	</script>
+</head>
+<body onload="startTimer()">
+	<div id="background"><img alt="" class="stretch" src="images/background.png"></div>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js">
+	</script> 
+	<script src="js/jquery.validate.min.js">
+	</script> 
+	<script src="js/form-validation.js">
+	</script>
 	<div id="banner">
-    <div id="wrapper" style="width:100%; overflow:hidden;">
-        <div id="container" style="width:100%; margin-right:auto;">
-                <img style="width: 100%;" src="images/banner.png" alt="Plumbers"/>
-        </div>
-    </div>
-</div>
-		<nav>
-    		<ul>
-        		<li><a href="index.html">Home</a></li>
-	        	<li><a href="staff.html">Meet The Team</a></li>
-        		<li><a href="contact.html">Contact Us</a></li>
-        		<li><a href="services.html">Services</a></li>
-    		</ul>
-		</nav>
-				<footer>	
-		</footer>
-		
-		
+		<div id="wrapper" style="width:100%; overflow:hidden;">
+			<div id="container" style="width:100%; margin-right:auto;"><img alt="Plumbers" src="images/banner.png" style="width: 100%;"></div>
+		</div>
+	</div>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="staff.html">Meet The Team</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li class="dropdown">
+				<a class="dropbtn" href="services.html">Services &#9662;</a>
+				<div class="dropdown-content">
+					<a href="plumbing.html">Plumbing</a> <a href="drainlaying.html">Drainlaying</a> <a href="equipment.html">Equipment</a>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<footer></footer>
+	<div class="left_lane">
+		<b></b>
+		<h2><b><img id="img" src="images/24hour.png" style="width:100%; height:100%;"> <button onclick="displayPreviousImage()" type="button"><b>Previous</b> <button onclick="displayNextImage()" type="button">Next</button></button></b></h2>
+		<div id="parent">
+			<h1>Book Now!</h1>
+			<form action="" id="form_login" name="registration">
+				<label for="firstname">First Name *</label><br>
+				<input id="firstname" name="firstname" placeholder="John" type="text"><br>
+				<label for="lastname">Last Name *</label><br>
+				<input id="lastname" name="lastname" placeholder="Doe" type="text"><br>
+				<label for="email">Email *</label><br>
+				<input id="email" name="email" placeholder="john@doe.com" type="email"><br>
+				<label for="phone">Phone Number</label><br>
+				<input id="phone" name="phone" placeholder="0118999" type="tel"><br>
+				<label for="details">Details *</label><br>
+				<textarea id="details" name="details" placeholder="please fix my plumbing"></textarea><br>
+				<br>
+				<button class="button" type="submit">Submit</button>
+			</form><br>
+			<h2 style="text-align: center;"><a href="contact.html">Contact Us</a></h2>
+		</div>
+	</div>
+	<div class="bottom_lane">
+		<b></b>
+		<div style="margin-left: 2em">
+			<b>Here's our clutch services</b>
+		</div><br>
+		<ul>
+			<li>Drainlaying and repairs</li>
+			<li>Sewer drains</li>
+			<li>Storm water drains</li>
+			<li>Storm Water retention tanks</li>
+			<li>Soakage tanks</li>
+			<li>Environmental tanks</li>
+			<li>Grease traps</li>
+			<li>Soak holes</li>
+			<li>Grey water recycling</li>
+			<li>Septic tanks</li>
+			<li>Effluent drains</li>
+			<li>Cess Pits</li>
+			<li>Drain cleaning and hydro jetting</li>
+			<li>House renovations</li>
+			<li>CCTV Camera</li>
+			<li>Site safe registered</li>
+			<li>Blocked drains</li>
+			<li>Pipe locating</li>
+			<li>Site clearing</li>
+		</ul>
+	</div><img alt="Placeholder" src="images/black.gif" style="margin: 3%; width:180px;height:202px;">
 		<div class="container">
-    		<div class="blurb">
        		  <h1>Our Staff</h1>
 				<h2>Registered Master Drainlayers </h2> 
               <p>Members of NZ Master Drainlayers Association. Approved certifying drainlayer with good working 	knowledge of regulatory guidelines and building standards.</p> 
@@ -46,25 +117,23 @@
 <p>All our team are resisted with Site Safe and work to high standards for our safety and yours.</p>
 <br>
 <br>
-<figure>
-  <img class = "profile" src="images/black.gif" alt="Placeholder">
-  <figcaption>Graeme Webb - Owner</figcaption>
-</figure>
-<figure>
-  <img class = "profile"  src="images/black.gif" alt="Placeholder">
-  <figcaption>Simeon Tarawa - Foreman</figcaption>
-</figure>
-<figure>
-  <img class = "profile"  src="images/black.gif" alt="Placeholder">
-  <figcaption>Jadedon Card - Apprentice</figcaption>
-</figure>
-<figure>
-  <img class = "profile"  src="images/black.gif" alt="Placeholder">
-  <figcaption>Brandon Card - Trainee</figcaption>
-</figure>
 
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
+<div img_line>
+ <img src="images/black.gif" alt="" style="width:180px;height:202px;" /> 
+ <img src="images/black.gif" alt="" style="width:180px;height:202px;" /> 
+ <img src="images/black.gif" alt="" style="width:180px;height:202px;" />
+ <img src="images/black.gif" alt="" style="width:180px;height:202px;" />
+ <br>
+ Graeme Webb - Owner  &nbsp; &nbsp; &nbsp; &nbsp;  Simeon Tarawa - Foreman &nbsp; &nbsp;Jadedon Card - Apprentice &nbsp; Brandon Card - Trainee
+</div>
+
+<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	</div><!-- /.container -->
 		<footer>
     		<ul>
         		<li><a href="mailto:patsaps9001@gmail.com">Email The Clutch Cluckers</a></li>

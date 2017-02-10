@@ -1,163 +1,125 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="icon" href="images/favicon.png">
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<title>Comfordably Laid Drainage</title>
-		
-		<!-- Scrolling Image Script -->
-		
-		<script type = "text/javascript">
-          function displayNextImage() {
-              x = (x === images.length - 1) ? 0 : x + 1;
-              document.getElementById("img").src = images[x];
-          }
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link href="images/favicon.png" rel="icon"><!-- link to main stylesheet -->
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<title>Comfordably Laid Drainage</title><!-- Scrolling Image Script -->
 
-          function displayPreviousImage() {
-              x = (x <= 0) ? images.length - 1 : x - 1;
-              document.getElementById("img").src = images[x];
-          }
+	<script type="text/javascript">
+	         function displayNextImage() {
+	             x = (x === images.length - 1) ? 0 : x + 1;
+	             document.getElementById("img").src = images[x];
+	         }
 
-          function startTimer() {
-              setInterval(displayNextImage, 3000);
-          }
+	         function displayPreviousImage() {
+	             x = (x <= 0) ? images.length - 1 : x - 1;
+	             document.getElementById("img").src = images[x];
+	         }
 
-          var images = [], x = -1;
-          images[0] = "images/24hour.png";
-          images[1] = "images/certified.png";
-          images[2] = "images/nosmall.png";
-      </script>
-		
-		
-		
-	</head>
-	<body onload = "startTimer()">
-	<div id="background">
-    <img src="images/background.png" class="stretch" alt="" />
-</div>
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="js/jquery.validate.min.js"></script>
-	<script src="js/form-validation.js"></script>
+	         function startTimer() {
+	             setInterval(displayNextImage, 3000);
+	         }
+
+	         var images = [], x = -1;
+	         images[0] = "images/24hour.png";
+	         images[1] = "images/certified.png";
+	         images[2] = "images/nosmall.png";
+	</script>
+</head>
+<body onload="startTimer()">
+	<div id="background"><img alt="" class="stretch" src="images/background.png"></div>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js">
+	</script> 
+	<script src="js/jquery.validate.min.js">
+	</script> 
+	<script src="js/form-validation.js">
+	</script>
 	<div id="banner">
-    <div id="wrapper" style="width:100%; overflow:hidden;">
-        <div id="container" style="width:100%; margin-right:auto;">
-                <img style="width: 100%;" src="images/banner.png" alt="Plumbers"/>
-        </div>
-    </div>
-</div>
-	
-	<nav>
-    		<ul>
-        		<li><a href="index.html">Home</a></li>
-	        	<li><a href="staff.html">Meet The Team</a></li>
-        		<li><a href="contact.html">Contact Us</a></li>
-        		<li class="dropdown">
-				<a href="services.html" class="dropbtn">Services &#9662;</a>
-    				<div class="dropdown-content">
-      				<a href="#">Plumbing</a>
-      				<a href="#">Drainlaying</a>
-      				<a href="#">Equipment</a>
-    </div>
-  </li>
-</ul>
-		</nav>
-		<footer>	
-		</footer>
-		
-   		<div class="left_lane">
-   			<b><h2><img id="img" style = "width:100%; height:100%;" src="images/24hour.png"/>
-       <button type="button" onclick="displayPreviousImage()">Previous</button>
-       <button type="button" onclick="displayNextImage()">Next</button></h2></b>
-	<div id = "parent">
-  		<h1>Book Now!</h1>
-   		<form id = "form_login" action="" name="registration">
-
-    <label for="firstname">First Name *</label> <br>
-    <input type="text" name="firstname" id="firstname" placeholder="John"/>
-	<br>
-    <label for="lastname">Last Name *</label> <br>
-    <input type="text" name="lastname" id="lastname" placeholder="Doe"/>
-	<br>
-    <label for="email">Email *</label><br>
-    <input type="email" name="email" id="email" placeholder="john@doe.com"/>
-	<br>
-    <label for="phone">Phone Number</label><br>
-    <input type="tel" name="phone" id="phone" placeholder="0118999"/>
-    <br>
-    <label for = "details">Details *</label><br>
-    <textarea name="details" id="details" placeholder="please fix my plumbing"></textarea>
-    <br><br>
-
-    <button class = "button" type="submit">Submit</button>
-
-  </form>
-   			<br>
-   			<h2 style="text-align: center; "><a href="contact.html">Contact Us</a></h2>
-   			
-   		</div>
+		<div id="wrapper" style="width:100%; overflow:hidden;">
+			<div id="container" style="width:100%; margin-right:auto;"><img alt="Plumbers" src="images/banner.png" style="width: 100%;"></div>
 		</div>
-   		
-  <div class = "bottom_lane"> <b><ul>Here's our clutch services</ul></b> <br><ul>
-  <li>Drainlaying and repairs</li>
-  <li>Sewer drains</li>
-  <li>Storm water drains</li>
-  <li>Storm Water retention tanks</li>
-  <li>Soakage tanks</li>
-  <li>Environmental tanks</li>
-  <li> Grease traps</li>
-  <li>Soak holes</li>
-  <li>Grey water recycling</li>
-  <li>Septic tanks</li>
-  <li>Effluent drains</li>
-  <li>Cess Pits</li>
-  <li>Drain cleaning and hydro jetting</li>
-  <li>House renovations</li>
-  <li>CCTV Camera</li>
-  <li>Site safe registered</li>
-  <li>Blocked drains</li>
-  <li>Pipe locating</li>
-  <li>Site clearing</li>
-  </ul> </div>
-     		
- <img src="images/black.gif" alt="Placeholder" style="margin: 3%; width:180px;height:202px;">    		
-      		<div class="container">
-       		<h1> TALK TO US ABOUT: </h1>
-       		<p>We are a family orientated business, who has over 34 years’ experience and 29 years self-employed.</p>
-                <img src="images/black.gif" alt="Placeholder" style="width:180px;height:202px;">
-                <p>We provide drainage consultation and drainlaying solutions in and around the Christchurch areas. If you are outside of this area, then an arrangement can be made.</p>
-                <p>We can isolate root damage, blockages, sewer lines, storm water and broken pipes with our CCTV video camera diagnosis of your drainage.</p>
-                <img src="images/black.gif" alt="Placeholder" style="width:180px;height:202px;">
-                <p>With considerable hands-on experience and vast industry knowledge, we can offer advice and direction, and are happy to meet onsite for an obligation-free consultation or to provide a quote.</p>
-                <footer>	
-            </footer>
-                <h2 style="text-align: center; "><i>24/7 Call Out Help For Blocked Drains!</i></h2>
-                <p style="text-align: center; ">  We can offer you:</p>
-                
- <div img_line>
- <img src="images/black.gif" alt="" style="width:180px;height:202px;" /> 
- <img src="images/black.gif" alt="" style="width:180px;height:202px;" /> 
- <img src="images/black.gif" alt="" style="width:180px;height:202px;" /> 
-</div>
- Emergency Drain Repairs &nbsp; &nbsp; Relaying and Location &nbsp; &nbsp; &nbsp; &nbsp; Drain Clearing                             
-               
-
-
-<p>With considerable hands-on experience and vast industry knowledge, we can offer advice and direction, and are happy to meet onsite for an obligation-free consultation or to provide a quote.</p>
-<p>We can isolate root damage, blockages, sewer lines, storm water and broken pipes with our CCTV video camera diagnosis of your drainage.</p>
-<img src="images/black.gif" alt="Placeholder" style="width:180px;height:202px;">
-<br>
-CCTV so we can watch you sleep in the sewer
-<p style="text-align: center; "><b>We are committed to providing you with the highest level of customer satisfaction possible. If for any reason, you have questions or comments, we are delighted to hear from you. Call our company on 0274901924, or send us an email at <a href="mailto:jsaps1@gmail.com">graemewebb@ihug.co.nz</a></b></p>
-<br />
-</div><!-- /.container -->
-      		
-      		
-<div class = "footer">
-	<h3 align ="left"><a href="mailto:patsaps9001@gmail.com">Email The Clutch Cluckers</a>
-	&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
-	<a href="https://github.com/Patsaps">github.com/Patsaps Github</a></h3>
+	</div>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="staff.html">Meet The Team</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li class="dropdown">
+				<a class="dropbtn" href="services.html">Services &#9662;</a>
+				<div class="dropdown-content">
+					<a href="plumbing.html">Plumbing</a> <a href="drainlaying.html">Drainlaying</a> <a href="equipment.html">Equipment</a>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<footer></footer>
+	<div class="left_lane">
+		<b></b>
+		<h2><b><img id="img" src="images/24hour.png" style="width:100%; height:100%;"> <button onclick="displayPreviousImage()" type="button"><b>Previous</b> <button onclick="displayNextImage()" type="button">Next</button></button></b></h2>
+		<div id="parent">
+			<h1>Book Now!</h1>
+			<form action="" id="form_login" name="registration">
+				<label for="firstname">First Name *</label><br>
+				<input id="firstname" name="firstname" placeholder="John" type="text"><br>
+				<label for="lastname">Last Name *</label><br>
+				<input id="lastname" name="lastname" placeholder="Doe" type="text"><br>
+				<label for="email">Email *</label><br>
+				<input id="email" name="email" placeholder="john@doe.com" type="email"><br>
+				<label for="phone">Phone Number</label><br>
+				<input id="phone" name="phone" placeholder="0118999" type="tel"><br>
+				<label for="details">Details *</label><br>
+				<textarea id="details" name="details" placeholder="please fix my plumbing"></textarea><br>
+				<br>
+				<button class="button" type="submit">Submit</button>
+			</form><br>
+			<h2 style="text-align: center;"><a href="contact.html">Contact Us</a></h2>
+		</div>
+	</div>
+	<div class="bottom_lane">
+		<b></b>
+		<div style="margin-left: 2em">
+			<b>Here's our clutch services</b>
+		</div><br>
+		<ul>
+			<li>Drainlaying and repairs</li>
+			<li>Sewer drains</li>
+			<li>Storm water drains</li>
+			<li>Storm Water retention tanks</li>
+			<li>Soakage tanks</li>
+			<li>Environmental tanks</li>
+			<li>Grease traps</li>
+			<li>Soak holes</li>
+			<li>Grey water recycling</li>
+			<li>Septic tanks</li>
+			<li>Effluent drains</li>
+			<li>Cess Pits</li>
+			<li>Drain cleaning and hydro jetting</li>
+			<li>House renovations</li>
+			<li>CCTV Camera</li>
+			<li>Site safe registered</li>
+			<li>Blocked drains</li>
+			<li>Pipe locating</li>
+			<li>Site clearing</li>
+		</ul>
+	</div><img alt="Placeholder" src="images/black.gif" style="margin: 3%; width:180px;height:202px;">
+	<div class="container">
+		<h1>TALK TO US ABOUT:</h1>
+		<p>We are a family orientated business, who has over 34 years’ experience and 29 years self-employed.</p><img alt="Placeholder" src="images/black.gif" style="width:180px;height:202px;">
+		<p>We provide drainage consultation and drainlaying solutions in and around the Christchurch areas. If you are outside of this area, then an arrangement can be made.</p>
+		<p>We can isolate root damage, blockages, sewer lines, storm water and broken pipes with our CCTV video camera diagnosis of your drainage.</p><img alt="Placeholder" src="images/black.gif" style="width:180px;height:202px;">
+		<p>With considerable hands-on experience and vast industry knowledge, we can offer advice and direction, and are happy to meet onsite for an obligation-free consultation or to provide a quote.</p>
+		<footer></footer>
+		<h2 style="text-align: center;"><i>24/7 Call Out Help For Blocked Drains!</i></h2>
+		<p style="text-align: center;">We can offer you:</p>
+		<div><img alt="" src="images/black.gif" style="width:180px;height:202px;"> <img alt="" src="images/black.gif" style="width:180px;height:202px;"> <img alt="" src="images/black.gif" style="width:180px;height:202px;"></div>Emergency Drain Repairs &nbsp; &nbsp; Relaying and Location &nbsp; &nbsp; &nbsp; &nbsp; Drain Clearing
+		<p>With considerable hands-on experience and vast industry knowledge, we can offer advice and direction, and are happy to meet onsite for an obligation-free consultation or to provide a quote.</p>
+		<p>We can isolate root damage, blockages, sewer lines, storm water and broken pipes with our CCTV video camera diagnosis of your drainage.</p><img alt="Placeholder" src="images/black.gif" style="width:180px;height:202px;"><br>
+		CCTV so we can watch you sleep in the sewer
+		<p style="text-align: center;"><b>We are committed to providing you with the highest level of customer satisfaction possible. If for any reason, you have questions or comments, we are delighted to hear from you. Call our company on 0274901924, or send us an email at <a href="mailto:jsaps1@gmail.com">graemewebb@ihug.co.nz</a></b></p><br>
+	</div><!-- /.container -->
+	<div class="footer">
+		<h3 align="left"><a href="mailto:patsaps9001@gmail.com">Email The Clutch Cluckers</a> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <a href="https://github.com/Patsaps">github.com/Patsaps Github</a></h3>
 	</div>
 </body>
 </html>
