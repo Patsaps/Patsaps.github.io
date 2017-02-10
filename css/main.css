@@ -3,7 +3,7 @@
 
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 85%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -50,6 +50,22 @@ ul.posts li {
     list-style: none;
 }
 
+
+
+#background {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
 .information {
 	line-height: 1px;
 	color: #333;
@@ -84,13 +100,23 @@ html, body {height: 100%;}
 	padding-bottom: 180px;}  /* must be same height as the footer */
 
 .footer {position: relative;
-	margin-top: -180px; /* negative value of footer height */
-	height: 180px;
 	clear:both;
     border-top: 1px solid #d5d5d5;
     font-size: .8em;} 
 
+/*Images in a row*/
 
+.img_line {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.img_line:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
 
 
 
@@ -139,7 +165,7 @@ margin: 1%;
 float:right;
 width: 48%;
 height:430px;
-background-color: lightgreen;
+background-color: rosybrown;
 }
 
 .bottom_lane {
