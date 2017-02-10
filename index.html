@@ -6,8 +6,34 @@
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<title>Comfordably Laid Drainage</title>
+		
+		<!-- Scrolling Image Script -->
+		
+		<script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "images/24hour.png";
+          images[1] = "images/certified.png";
+          images[2] = "images/nosmall.png";
+      </script>
+		
+		
+		
 	</head>
-	<body>
+	<body onload = "startTimer()">
 	<div id="background">
     <img src="images/background.png" class="stretch" alt="" />
 </div>
@@ -32,18 +58,12 @@
 		<footer>	
 		</footer>
 		
-   		<div style="opacity: 0.5;" class="left_lane">
-			<b><h1>Certified Rapists</h1></b>
-   			<br>
-   			<b><h2>24/7 Rape Callout</h2></b>
-   			<br>
-   			<b><h2>Free Quotes "Speak softly and carry a big stick; you will go far."</h2></b>
-   			<br>
-   			<h2 align="center"><a href="contact.html">Contact Us</a></h2>
-   			
-   		</div>
-   		<div class="right_lane">
-   		<div id = "parent">
+   		<div class="left_lane">
+   			<b><h2><img id="img" style = "width:100%; height:100%;" src="images/24hour.png"/>
+       <button type="button" onclick="displayPreviousImage()">Previous</button>
+       <button type="button" onclick="displayNextImage()">Next</button></h2></b>
+	<div id = "parent">
+  		<h1>Book Now!</h1>
    		<form id = "form_login" action="" name="registration">
 
     <label for="firstname">First Name *</label> <br>
@@ -62,15 +82,16 @@
     <textarea name="details" id="details" placeholder="please fix my plumbing"></textarea>
     <br><br>
 
-    <button type="submit">Submit</button>
+    <button class = "button" type="submit">Submit</button>
 
   </form>
-			</div> 	
-   			
+   			<br>
+   			<h2 align="center"><a href="contact.html">Contact Us</a></h2>
    			
    		</div>
-		<div class="container">
-			<div class = "bottom_lane"> <b><ul>Here's our clutch services</ul></b> <br><ul>
+		</div>
+   		
+  <div class = "bottom_lane"> <b><ul>Here's our clutch services</ul></b> <br><ul>
   <li>Drainlaying and repairs</li>
   <li>Sewer drains</li>
   <li>Storm water drains</li>
@@ -90,9 +111,11 @@
   <li>Blocked drains</li>
   <li>Pipe locating</li>
   <li>Site clearing</li>
-</ul> </div>
-      		
-       		<h1> ARMSTRONG PLUMBING ARE THE EXPERTS YOU NEED. TALK TO US ABOUT: </h1>
+  </ul> </div>
+     		
+ <img src="images/black.gif" alt="Placeholder" style="margin: 3%; width:180px;height:202px;">    		
+      		<div class="container">
+       		<h1> TALK TO US ABOUT: </h1>
        		<p>If you need reliable Plumbing and Drainage in Christchurch, you need the skills and experience of your local specialist Comfordably laid Drainage limited.</p>
         		<p>We are a family orientated business, who has over 34 years’ experience and 29 years self-employed.</p>
                 <img src="images/black.gif" alt="Placeholder" style="width:180px;height:202px;">
