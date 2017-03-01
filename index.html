@@ -4,39 +4,47 @@
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<link rel="icon" href="images/logo.png"><!-- link to main stylesheet -->
 	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<title>Comfordably Laid Drainage</title><!-- Scrolling Image Script -->
-
-	<script type="text/javascript">
-	            var images = [], x = -1;
-	            images[0] = "images/24hour.png";
-	            images[1] = "images/certified.png";
-	            images[2] = "images/nosmall.png";
-	</script>
 </head>
+
+
 <body onload="startTimer()">
-	<script src="js/jquery.min.jsver=3.0.1.js" type="text/javascript">
-	</script> 
-	<script src="js/infinite-rotator.js" type="text/javascript">
-	</script>
-	
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js">
-	</script> 
-	<script src="js/jquery.validate.min.js">
-	</script> 
-	<script src="js/form-validation.js">
-	</script>
+	<script src="js/jquery.min.jsver=3.0.1.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>	
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<!-- Banner -->
 	<div id="banner">
 		<div id="wrapper" style="width:100%; overflow:hidden;">
 			<div id="container" style="width:100%; margin-right:auto;"><img alt="Plumbers" src="images/banner1.png" style="width: 100%;"></div>
 		</div>
 	</div>
+	
+	<script type="text/javascript">
+    $(document).ready(function(){
+      $('.scroll_images').slick({
+  dots: true,
+  infinite: true,
+  arrows: true,	  
+  speed: 500,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  prevArrow:"<img class='a-left control-c prev slick-prev' src='images/back.png'>",
+  nextArrow:"<img class='a-right control-c next slick-next' src='images/next.png'>",	  
+  cssEase: 'linear'
+});
+    });
+  </script>	
+	
+<!-- Navigation Bar -->	
 	<nav style="text-align:center;">
 		<ul>
 			<li>
 				<a href="index.html">Home</a>
 			</li>
 			<li>
-				<a href="staff.html">Meet The Team</a>
+				<a href="history.html">History</a>
 			</li>
 			<li>
 				<a href="contact.html">Contact Us</a>
@@ -44,37 +52,39 @@
 			<li class="dropdown">
 				<a class="dropbtn" href="">Services &#9662;</a>
 				<div class="dropdown-content">
-					<a href="plumbing.html">Plumbing</a> <a href="drainlaying.html">Drainlaying</a> <a href="equipment.html">Equipment</a>
+					<a href="plumbing.html">Plumbing</a> <a href="drainlaying.html">Drainlaying</a>
 				</div>
 			</li>
 		</ul>
 	</nav>
-	<footer></footer>
-	<div class="w3-content w3-section" style="max-width:80%"><img class="mySlides w3-animate-fading" src="images/image01.png" style="width:100%"> <img class="mySlides w3-animate-fading" src="images/image02.png" style="width:100%"> <img class="mySlides w3-animate-fading" src="images/image03.png" style="width:100%"></div>
-	<script>
-	var myIndex = 0;
-	carousel();
-
-	function carousel() {
-	   var i;
-	   var x = document.getElementsByClassName("mySlides");
-	   for (i = 0; i < x.length; i++) {
-	      x[i].style.display = "none";  
-	   }
-	   myIndex++;
-	   if (myIndex > x.length) {myIndex = 1}    
-	   x[myIndex-1].style.display = "block";  
-	   setTimeout(carousel, 9000);    
-	}
-	</script>
+	<footer></footer>	
+	<br>
 
 
+
+
+
+<!-- Text Information -->
 	<div class="container">
 		<h1>Comfordably Laid Draining - Your Drainlaying Solution</h1>
-		<p >We are a family orientated business, who has over 34 years’ experience and 29 years self-employed.</p>
-			<img alt="Placeholder" src="images/black.gif" style="display: block; margin: 0 auto; width:180px;height:202px;"><h3 style="text-align: center;"> Image </h3>
 		<p>We provide drainage consultation and drainlaying solutions in and around the Christchurch areas. If you are outside of this area, then an arrangement can be made.</p>
-		<img align="left" alt="Placeholder" src="images/black.gif" style="width:100px;height:100px;">
+		
+
+		
+		
+		<!-- Scrolling Images -->	
+	<div class="scroll_images">
+  <div><a href="contact.html"><img src="images/image01.png" style="width:100%; height: 495px;"></a><div class="caption">THIS IS IMAGE 01 </div></div>
+  <div><a href="contact.html"><img src="images/image02.png" style="width:100%; height: 495px;"></a><div class="caption">THIS IS IMAGE 02</div></div>
+  <div><a href="contact.html"><img src="images/image03.png" style="width:100%; height: 495px;"></a><div class="caption">THIS IS IMAGE 03</div></div>
+  <div><a href="contact.html"><img src="images/image10.png" style="width:100%; height: 495px;"></a><div class="caption">THIS IS IMAGE 10</div></div>
+  <div><a href="contact.html"><img src="images/image11.png" style="width:100%; height: 495px;"></a><div class="caption">THIS IS IMAGE 11</div></div>
+  <div><a href="contact.html"><img src="images/image12.png" style="width:100%; height: 495px;"></a><div class="caption">THIS IS IMAGE 12</div></div>
+</div>
+		
+
+		<p >We are a family orientated business, who has over 34 years’ experience and 29 years self-employed.</p>
+		<img align="left" alt="Placeholder" src="images/cctv.png" style="width:15%;height:15%;">
 		<br>
 		<p>We can isolate root damage, blockages, sewer lines, storm water and broken pipes with our CCTV video camera diagnosis of your drainage.</p>
 		<br>
@@ -83,10 +93,41 @@
 		<br>
 		<h2 style="text-align: center;"><i>24/7 Call Out Help For Blocked Drains!</i></h2>
 		<p style="text-align: center;">We can offer you:</p>
-		<div>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <img alt="" src="images/black.gif" style="width:180px;height:202px;"> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <img alt="" src="images/black.gif" style="width:180px;height:202px;"> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <img alt="" src="images/black.gif" style="width:180px;height:202px;"></div>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Emergency Drain Repairs &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Relaying and Location &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Location Drain Cleaning<br>
-		<br>
-		<footer></footer>
-		<p style="text-align: center;"><b>We are committed to providing you with the highest level of customer satisfaction possible. If for any reason, you have questions or comments, we are delighted to hear from you. Call our company on 0274901924, or send us an email at <a style="background-color:#D1C8C8;" href="mailto:jsaps1@gmail.com">graemewebb@ihug.co.nz</a></b></p><br>
+		
+		
+		
+  	<script type="text/javascript">
+    $(document).ready(function(){
+      $('.offer_images, .offer_images1, .offer_images2').slick({
+  dots: true,
+  infinite: true,
+  arrows: false,	  
+  speed: 500,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+    });
+  </script>
+ 
+		
+<!-- Scrolling Offers -->	
+	<div class="offer_images">
+  <div><p style="text-align: center;"> Description</p><a href="contact.html"><img src="images/image01.png" style="width:97%;height:202px;"></a></div>
+  <div><p style="text-align: center;"> Description</p><a href="contact.html"><img src="images/image02.png" style="width:97%;;height:202px;"></a></div>
+  <div><p style="text-align: center;"> Description</p><a href="contact.html"><img src="images/image03.png" style="width:97%;;height:202px;"></a></div>
+		</div>
+		
+			<div class="offer_images">
+  <div><p style="text-align: center;"> Description</p><a href="contact.html"><img src="images/image04.png" style="width:97%;height:202px;"></a></div>
+  <div><p style="text-align: center;"> Description</p><a href="contact.html"><img src="images/image05.png" style="width:97%;;height:202px;"></a></div>
+  <div><p style="text-align: center;"> Description</p><a href="contact.html"><img src="images/image06.png" style="width:97%;;height:202px;"></a></div>
+		</div>
+		
+			<div class="offer_images">
+  <div><p style="text-align: center;"> Description</p><a href="contact.html"><img src="images/image07.png" style="width:97%; height:202px;"></a></div>
+  <div><p style="text-align: center;"> Description</p><a href="contact.html"><img src="images/image08.png" style="width:97%; height:202px;"></a></div>
+  <div><p style="text-align: center;"> Description</p><a href="contact.html"><img src="images/image09.png" style="width:97%; height:202px;"></a></div>
+		</div>
 	</div><!-- /.container -->
 
 	
