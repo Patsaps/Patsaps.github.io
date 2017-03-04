@@ -2,75 +2,56 @@
 <html>
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	<link rel="icon" href="images/logo.png"><!-- link to main stylesheet -->
-	<link href="css/main.css" rel="stylesheet" type="text/css">
-	<title>Comfordably Laid Drainage</title><!-- Scrolling Image Script -->
+	<meta name="description" content="Christchurch based locally owned plumbing and drainlaying business.">
+    <meta name="keywords" content="comfordably,drainlaying,plumbing,blockage,christchurch,ajax,sewer,repair,watermains">
+    <meta name="author" content="Graeme Webb">
+	<link rel="icon" href="images/logo.png"> <!-- logo icon -->
+	<link href="css/main.css" rel="stylesheet" type="text/css"> <!-- main stylesheet -->
+	<link href="css/table.css" rel="stylesheet" type="text/css"> <!-- table stylesheet -->
+	<link rel="stylesheet" type="text/css" href="flickity/flickity.css"/> <!-- scrolling image stylesheet -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script> <!-- jquery script -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!-- jquery ui script -->
+	<script src="flickity/flickity.js"></script> <!-- Scrolling Image Script -->
+	<script src="js/jquery.validate.min.js"></script> <!-- Validation Script --> 
+	<script src="js/form-validation.js"></script> <!-- Validation Settings -->
+	<title>Contact Us</title>
+	</head>
 
-	<script type="text/javascript">
-	            var images = [], x = -1;
-	            images[0] = "images/24hour.png";
-	            images[1] = "images/certified.png";
-	            images[2] = "images/nosmall.png";
-	</script>
-</head>
-<body onload="startTimer()">
-	<script src="js/jquery.min.jsver=3.0.1.js" type="text/javascript">
-	</script> 
-	<script src="js/infinite-rotator.js" type="text/javascript">
-	</script>
-	
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js">
-	</script> 
-	<script src="js/jquery.validate.min.js">
-	</script> 
-	<script src="js/form-validation.js">
-	</script>
+
+<body>
+<!-- Banner -->
 	<div id="banner">
 		<div id="wrapper" style="width:100%; overflow:hidden;">
-			<div id="container" style="width:100%; margin-right:auto;"><img alt="Plumbers" src="images/banner1.png" style="width: 100%;"></div>
+			<div id="container" style="width:100%; margin-right:auto;"><img alt="Plumbers" src="images/banner2.png" style="width: 100%;"></div>
 		</div>
 	</div>
-	<nav style="text-align:center;">
-		<ul>
-			<li>
-				<a href="index.html">Home</a>
-			</li>
-			<li>
-				<a href="staff.html">Meet The Team</a>
-			</li>
-			<li>
-				<a href="contact.html">Contact Us</a>
-			</li>
+	
+<!-- Navigation Bar -->	
+<nav style="text-align:center;">
+	<ul>
+	<li>
+		<a href="index.html">Home</a>
+		</li>
+		<li>
+		<a href="history.html">History</a>
+		</li>
+		<li>
+		<a href="contact.html">Contact Us</a>
+		</li>
 			<li class="dropdown">
-				<a class="dropbtn" href="">Services &#9662;</a>
-				<div class="dropdown-content">
-					<a href="plumbing.html">Plumbing</a> <a href="drainlaying.html">Drainlaying</a> <a href="equipment.html">Equipment</a>
-				</div>
-			</li>
-		</ul>
-	</nav>
-	<footer></footer>
-	<div class="w3-content w3-section" style="max-width:80%"><img class="mySlides w3-animate-fading" src="images/image01.png" style="width:100%"> <img class="mySlides w3-animate-fading" src="images/image02.png" style="width:100%"> <img class="mySlides w3-animate-fading" src="images/image03.png" style="width:100%"></div>
-	<script>
-	var myIndex = 0;
-	carousel();
+			<a class="dropbtn" href="">Services &#9662;</a>
+			<div class="dropdown-content">
+				<a href="plumbing.html">Plumbing</a> <a href="drainlaying.html">Drainlaying</a>
+		</div>
+		</li>
+	</ul>
+</nav>
+<footer></footer>	
+<br>
 
-	function carousel() {
-	   var i;
-	   var x = document.getElementsByClassName("mySlides");
-	   for (i = 0; i < x.length; i++) {
-	      x[i].style.display = "none";  
-	   }
-	   myIndex++;
-	   if (myIndex > x.length) {myIndex = 1}    
-	   x[myIndex-1].style.display = "block";  
-	   setTimeout(carousel, 9000);    
-	}
-	</script>
-	
-	
-	
-		<div class="container">
+
+<!-- Text Information -->
+<div class="container">
         		<h1>Contact Us</h1>
                 <p><b>Graeme Webb</b> <br> 
 				 24 Ferry Road <br>
@@ -92,7 +73,7 @@
 				<label for="details">Details *</label><br>
 				<textarea id="details" name="details" placeholder="please fix my plumbing"></textarea><br>
 				<br>
-				<button class="button" type="submit">Submit</button>
+				<button class="submit_button" type="submit">Submit</button>
 			</form><br>  
 
 		</div><!-- /.container -->
