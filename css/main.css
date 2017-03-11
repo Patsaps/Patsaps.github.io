@@ -1,6 +1,22 @@
 @charset "utf-8";
 
+#wrap {
+ width: 1020px;
+}
 
+@media only screen and (max-width: 900px) { /* Screen which has a maximum width of 900px */
+
+  #wrap {
+    max-width: 1000px;
+  } 
+	#offer{
+		display:none;
+	}
+	.box1{
+		margin-top: 0px;
+	}
+
+}
 /* Fonts */
 
 @font-face {
@@ -38,6 +54,7 @@ body {
 	 font-family: "PT Sans";
 	 font-style: normal;
 	 font-weight: 400;
+	
 }
 
 .carousel-cell {
@@ -89,6 +106,9 @@ background-color: rgba(255, 255, 255, 0.5);
 font-size: 4vh;
 }
 
+#offer{
+	position:relative;
+}
 
 /* Navigation */
 
@@ -121,6 +141,7 @@ body {
 a {
 	text-decoration: none;
 	color: #111;
+	font-size: 100%;
 }
 a:hover {
 	text-decoration: underline;
@@ -129,36 +150,50 @@ h1 {
 	color:#353333;
 	font-family: "PT Sans", serif;
 	text-align: center;
-	line-height: 40px;
-	margin: 0 0 10px;
-	font-size: 60px;
+	line-height: 80%;
+	margin: 0 0 5%;
+	font-size: 500%;
 	font-weight: bold;
+	text-shadow: 0 1px 1px #fff;
 }
 h2 {
 	font-family: "PT Sans", serif;
-	font-size: 30px;
+	font-size: 270%;
 	letter-spacing: -1px;
 	color: #515151;
-	line-height: 10px;
+	line-height: 80%;
+	text-shadow: 0 1px 1px #fff;
 }
 h3 {
 	font-family: "PT Sans", serif;
-	font-size: 22px;
+	font-size: 120%;
 	letter-spacing: -1px;
 	color: #515151;
-	line-height: 25px;
+	line-height: 80%;
+	text-shadow: 0 1px 1px #fff;
 }
 h4 { 
+   color:#353333;
    font-family: "PT Sans", serif;	
-   position: absolute; 
-   top: 200px; 
+   font-size: 200%;
+   top: 200%; 
+   line-height: 20%;	
    left: 0; 
    width: 100%; 
+   text-shadow: 0 1px 1px #fff;
+}
+h5 { 
+   color:#353333;
+   font-family: "PT Sans", serif;	
+   font-size: 130%;
+   line-height: 80%;
+   text-shadow: 0 1px 1px #fff;
+   text-align: center;
 }
 p {
 	color:#353333;
-	font-size: 23px;
-	line-height: 23px;
+	font-size: 100%;
+	line-height: 80%;
 	font-family: "PT Sans", serif;
 	text-align: left;
 	text-shadow: 0 1px 1px #fff;
@@ -294,6 +329,7 @@ hr.style-five:after {  /* Not really supposed to work, but does */
 }
 
 footer ul {
+ position: relative;
  text-align:center;
  display: block;
  margin-left: auto;

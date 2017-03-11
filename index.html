@@ -6,6 +6,7 @@
 	<meta name="description" content="Christchurch based locally owned plumbing and drainlaying business.">
     <meta name="keywords" content="comfordably,drainlaying,plumbing,blockage,christchurch,ajax,sewer,repair,watermains">
     <meta name="author" content="Graeme Webb">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
 	<link rel="icon" href="images/logo.png"> <!-- logo icon -->
 	<link href="css/main.css" rel="stylesheet" type="text/css"> <!-- main stylesheet -->
 	<link href="css/table.css" rel="stylesheet" type="text/css"> <!-- table stylesheet -->
@@ -13,17 +14,22 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script> <!-- jquery script -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!-- jquery ui script -->
 	<script src="flickity/flickity.js"></script> <!-- Scrolling Image Script -->
+	<script src="js/responsive-switch.min.js"></script> <!-- Mobile Version -->
 	<title>Comfordably Laid Drainage</title>
 	</head>
 
 
 <body>
+<div id="wrap">
 <!-- Banner -->
 	<div id="banner">
 		<div id="wrapper" style="width:100%; overflow:hidden;">
 			<div id="container" style="width:100%; margin-right:auto;"><img alt="Plumbers" src="images/banner2.png" style="width: 100%;"></div>
 		</div>
 	</div>
+	
+	
+	
 	
 <!-- Navigation Bar -->	
 <nav style="text-align:center;">
@@ -32,18 +38,23 @@
 		<a class = "current" href="index.html">Home</a>
 		</li>
 		<li>
-		<a href="history.html">History</a>
+		<a href="history.html"> History</a>
 		</li>
 		<li>
 		<a href="contact.html">Contact Us</a>
 		</li>
 			<li class="dropdown">
-			<a class="dropbtn" href="">Services &#9662;</a>
+			<a class="dropbtn" role="button">Services &#9662;</a>
 			<div class="dropdown-content">
 				<a href="plumbing.html">Plumbing</a> <a href="drainlaying.html">Drainlaying</a>
 		</div>
 		</li>
 	</ul>
+			<a href="#"
+      class="rs-link"
+      data-link-desktop="Switch to desktop version"
+      data-link-responsive="Switch to responsive / mobile version"
+      data-always-visible="false"></a>
 </nav>
 <hr class="style18">
 
@@ -88,36 +99,43 @@
  <br>
  <br>
 		
+
+<div id="offer">
 <hr class="style18">
-<p style="text-align: center;">We Can Offer You:</p>
+<h4 style="text-align: center;">We Can Offer You:</h4>
 		
 
 											
 <!-- Scrolling Offers -->	
 <div class="offer_images" data-flickity>
-<div class="carousel-offer"><p style="text-align: center;"> Emergency Repairs</p><a href="contact.html"><img src="images/stock/image08.png"></a></div>
-<div class="carousel-offer"><p style="text-align: center;"> Emergency Repairs</p><a href="contact.html"><img src="images/stock/image09.png"></a></div>
-<div class="carousel-offer"><p style="text-align: center;"> Emergency Repairs</p><a href="contact.html"><img src="images/stock/image10.png"></a></div>
+<div class="carousel-offer"><h5> Emergency Repairs</h5><a href="contact.html"><img src="images/stock/image08.png"></a></div>
+<div class="carousel-offer"><h5> Emergency Repairs</h5><a href="contact.html"><img src="images/stock/image09.png"></a></div>
+<div class="carousel-offer"><h5> Emergency Repairs</h5><a href="contact.html"><img src="images/stock/image10.png"></a></div>
 </div>
 			
 <div class="offer_images" data-flickity>
- <div class="carousel-offer"><p style="text-align: center;"> Alterations </p><a href="contact.html"><img src="images/stock/image11.png" ></a></div>
- <div class="carousel-offer"><p style="text-align: center;"> Alterations</p><a href="contact.html"><img src="images/stock/image12.png" ></a></div>
- <div class="carousel-offer"><p style="text-align: center;"> Alterations</p><a href="contact.html"><img src="images/stock/image13.png" ></a></div>
+ <div class="carousel-offer"><h5> Alterations </h5><a href="contact.html"><img src="images/stock/image11.png" ></a></div>
+ <div class="carousel-offer"><h5> Alterations</h5><a href="contact.html"><img src="images/stock/image12.png" ></a></div>
+ <div class="carousel-offer"><h5> Alterations</h5><a href="contact.html"><img src="images/stock/image13.png" ></a></div>
 </div>
 	
 <div class="offer_images" data-flickity>
- <div class="carousel-offer"><p style="text-align: center;"> New Builds</p><a href="contact.html"><img src="images/stock/image14.png" ></a></div>
- <div class="carousel-offer"><p style="text-align: center;"> New Builds</p><a href="contact.html"><img src="images/stock/image15.png" ></a></div>
- <div class="carousel-offer"><p style="text-align: center;"> New Builds</p><a href="contact.html"><img src="images/stock/image16.png" ></a></div>
+ <div class="carousel-offer"><h5> New Builds</h5><a href="contact.html"><img src="images/stock/image14.png" ></a></div>
+ <div class="carousel-offer"><h5> New Builds</h5><a href="contact.html"><img src="images/stock/image15.png" ></a></div>
+ <div class="carousel-offer"><h5> New Builds</h5><a href="contact.html"><img src="images/stock/image16.png" ></a></div>
 </div>
 
 </div>
-		 <br>
- <br>
+
+<br>
+<br>
+		<br>
+<br>
+		<br>
+<br>
 			
 <!-- Footer -->
-<div class="box1" style="margin-top: 290px;">		
+<div class="box1" style = "margin-top:25%">		
 <hr class="style-five">	
 </div>
 <div class="box">
@@ -143,7 +161,7 @@
     <li> <a href="contact.html#form">Work Request</a></li>
   </ul>
   <ul>
-    <h3>Services</h3>
+    <h3> <a href="%3"> Services </a></h3>
     <li> <a href="plumbing.html">Plumbing</a></li>
     <li> <a href="drainlaying.html">Drainlaying</a></li>
   </ul>
@@ -181,5 +199,7 @@ var $carousel = $('.offer_images').flickity({
   lazyLoad: 3
 });
 </script>
+	</div>
+</div>
 </body>
 </html>
