@@ -26,16 +26,16 @@ if(isset($_POST['email'])) {
  
      
  
-    $first_name = $_POST['firstname']; // required
-    $last_name = $_POST['lastname']; // required
-    $email_from = $_POST['email']; // required
-    $telephone = $_POST['phone']; // not required
-    $comments = $_POST['details']; // required
+    $firstname = $_POST['firstname']; // required
+    $lastname = $_POST['lastname']; // required
+    $email = $_POST['email']; // required
+    $phone = $_POST['phone']; // not required
+    $details = $_POST['details']; // required
  
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
  
-  if(!preg_match($email_exp,$email_from)) {
+  if(!preg_match($email_exp,$email)) {
     $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
   }
  
@@ -50,7 +50,7 @@ if(isset($_POST['email'])) {
   }
  
   if(strlen($details) < 2) {
-    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+    $error_message .= 'The Details you entered do not appear to be valid.<br />';
   }
  
   if(strlen($error_message) > 0) {
@@ -70,12 +70,12 @@ if(isset($_POST['email'])) {
     $email_message .= "First Name: ".clean_string($firstname)."\n";
     $email_message .= "Last Name: ".clean_string($lastname)."\n";
     $email_message .= "Email: ".clean_string($emailfrom)."\n";
-    $email_message .= "Telephone: ".clean_string($phone)."\n";
-    $email_message .= "Comments: ".clean_string($details)."\n";
+    $email_message .= "Phone: ".clean_string($phone)."\n";
+    $email_message .= "Details: ".clean_string($details)."\n";
  
 // create email headers
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
+$headers = 'From: '.$email."\r\n".
+'Reply-To: '.$email."\r\n" .
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
