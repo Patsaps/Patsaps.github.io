@@ -69,7 +69,7 @@ if(isset($_POST['email'])) {
  
     $email_message .= "First Name: ".clean_string($firstname)."\n";
     $email_message .= "Last Name: ".clean_string($lastname)."\n";
-    $email_message .= "Email: ".clean_string($emailfrom)."\n";
+    $email_message .= "Email: ".clean_string($email)."\n";
     $email_message .= "Phone: ".clean_string($phone)."\n";
     $email_message .= "Details: ".clean_string($details)."\n";
  
