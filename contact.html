@@ -62,12 +62,14 @@
 <!-- Text Information -->
 <div class="container">
         		<h1>Contact Us</h1>
-        <p style = "text-align: center;">Call us on: <i><a href="tel:1-408-555-5555">027-490-1924</a></i> or send us an email at <i><a href="mailto:patsaps9001@gmail.com">graemewebb@ihug.co.nz</a></i></p>
+        		<div id="phoneno"></div>
+        <h4 style = "text-align: center;">Call us on: <i><a href="tel:1-408-555-5555">027-490-1924</a></i> or send us an email at <i><a href="mailto:patsaps9001@gmail.com">graemewebb@ihug.co.nz</a></i></h4>
         
-        <h3 style="text-align:center">If you would like to book a service, please fill out the form below and we will contact you as soon as possible!</h3>
+        <h2 style="text-align:center">If you would like to book a service, please fill out the form below and we will contact you as soon as possible!</h2>
 <br>
+	            <div id="formno"></div>
 		        <h2 style="text-align:center"> Book Now</h2>
-			<form style="width: 75%; display: block; margin-left: auto; margin-right: auto" action="" id="form_login" name="registration">
+			<form style="width: 75%; display: block; margin-left: auto; margin-right: auto" method="post" action="contact.php" id="form_login" name="registration">
 				<label for="firstname">First Name *</label><br>
 				<input id="firstname" name="firstname" placeholder="John" type="text"><br>
 				<label for="lastname">Last Name *</label><br>
@@ -96,20 +98,15 @@
   </ul>
   <ul>
 	<h3> <a href="history.html">History</a></h3>
-	<li> <a href="history.html#plumbimg">Plumbing Work</a></li>
-    <li> <a href="history.html#drainimg">Drainlaying Work</a></li>
-    <li> <a href="history.html#newhimg">New Home Work</a></li>
-    <li> <a href="history.html#repairimg">Repair Work</a></li>
-    <li> <a href="history.html#mainimg">Maintanence Work</a></li>
+	<li> <a href="history.html#pastwork">Past Work</a></li>
   </ul>
   <ul>
 	  <h3> <a href="contact.html">Contact Us</a></h3>
-    <li> <a href="contact.html#phone">Phone Number</a></li>
-    <li> <a href="contact.html#email">Email</a></li>
-    <li> <a href="contact.html#form">Work Request</a></li>
+    <li> <a href="contact.html#phoneno">Phone Number</a></li>
+    <li> <a href="contact.html#formno">Work Request</a></li>
   </ul>
   <ul>
-    <h3>Services</h3>
+    <h3> <a href="index.html"> Services </a></h3>
     <li> <a href="plumbing.html">Plumbing</a></li>
     <li> <a href="drainlaying.html">Drainlaying</a></li>
   </ul>
@@ -121,5 +118,6 @@
 		  <a href="index.html">HOME</a> · <a href="history.html">HISTORY</a> · <a href="plumbing.html">PLUMBING</a> · <a href="drainlaying.html">DRAINAGE</a> · <a href="contact.html">CONTACT US</a> · <a href="sitemap.html">SITEMAP</a></li>
 </div>
 </div>
+	</div>
 </body>
 </html>
